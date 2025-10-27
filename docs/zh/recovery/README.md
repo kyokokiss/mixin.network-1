@@ -17,38 +17,70 @@ contributors: false
 - 涉及功能：转账与储值
 - 当前状态：
   - ✅ 可以将大部分旧钱包中的资产，**单向迁移**到新钱包
-  - ✅ 新主网支持充值的代币：
-    - BTC、ETH、XRP、EOS、TRX、各版本 USDT、LTC
-  - ✅ 新主网支持提币的代币：
-    - TRX、USDT-TRC20
-  - ❌ 旧主网提现功能**停止**，⏸️ 充值功能**暂停**
+  - ✅ 现在 Mixin 已经支持充值的有：
+        1. Bitcoin BTC
+        2. Ethereum 链上的所有资产
+        3. Polygon 链上的所有资产
+        4. BSC 链上的所有资产
+        5. Litecoin LTC
+        6. EOS 链上所有的资产
+        7. Ripple XRP
+        8. Dogecoin DOGE
+        9. TRON 链上的所有资产如 USDT-TRC20，TRX 等
+        10. MobileCoin 的充值，包括 MOB 和 eUSD 
+  - ✅ 现在 Mixin 已经开放提现的有：
+        1. Bitcoin BTC
+        2. TRON 链上的所有资产，比如 TRX，USDT 等
+        3. Litecoin LTC
+        4. Dogecoin DOGE
+        5. Polygon 链上的所有资产，比如 MATIC，USDT，USDC 等等 
+        6. Ethereum 链上的所有资产，比如 ETH，USDT-ERC20 等等
+        7. MobileCoin 的资产 MOB 和 eUSD
+        8. BSC 链上的所有资产，比如 BNB，USDT，USDC 等等
+        9. EOS 链上的所有资产，比如 EOS，USDT，IQ 等等
+        10. Ripple XRP
+  - ❌ 旧主网提现功能**停止**，⏸️ 充值功能**暂停**，请勿充值资产到旧系统。
 - 备注：升级 1.1 版本 Mixin Messenger 以后，进入右下角钱包，点击最上面的蓝条，才能进行手工迁移。
+  - Mixin 资产[迁移教程](https://support.mixin.one/zh/article/5aac5l2v5oqk6lwe5lqn5luo5pen6zkx5yyf6lb56e76iez5paw6zkx5yyf77yf-my2a1e/)
+  - MDT [债券介绍](https://support.mixin.one/zh/article/mdt-w0b7ju/)
 
 ### Pando
 
 > 关于 Pando各协议及产品目前运行状态及使用常见问题指引 的详情请参考：[这篇文章](https://quill.im/39204791/53e5f9e6-76d8-46bd-b276-650e852ea5c3)
 
+- ✅ Swap: 完全恢复
+- ✅ XIN 节点: 完全恢复
+- ✅ BOX 资深理财: 完全恢复
+- ✅ B.watch: 完全恢复
+- 🚧 Leaf: 旧主网版本部分恢复
+- 🚧 Rings: 旧主网版本部分恢复
+- ⏸️ BEE.holdings: 暂停状态
+- ⏸️ 定投: 暂停状态
+ 
 **Pando Swap**
 
 - 涉及功能：Swap 交易、挂单交易、流动性管理
-- 当前状态：
+- 当前状态(新主网版):
+  - ✅ 服务重启，所有功能正常
+  - ‼️ 流动性还比较低，交易时请留意价格影响
+- 当前状态(旧主网版)：
   - ✅ 可添加和提取流动性
   - ⏸️ 其他所有功能**暂停**。
-- 计划：未来在新、旧主网分别重启，提供交易，暂无确切的重启时间。
-- 备注：建议提取所有包含 USDT、BTC、ETH、BOX 的流动性资产。其他流动性资产可不提取。操作方式请参考[这篇文章](https://quill.im/39204791/53e5f9e6-76d8-46bd-b276-650e852ea5c3)。
+- 备注：建议提取旧主网版本中所有包含 USDT、BTC、ETH、BOX 的流动性资产。其他流动性资产可不提取。操作方式请参考[这篇文章](https://quill.im/39204791/53e5f9e6-76d8-46bd-b276-650e852ea5c3)。
 
 **Pando Leaf**
 
 - 涉及功能：铸币、还款、提取质押物
 - 当前状态：
-  - ✅ 只能**全额还款**；**无债务**的情况下可以提取质押物；
+  - ✅ 除 ETH、sETH-BTC、XIN 和 MOB 金库以外，旧主网 Leaf 上其他所有金库恢复部分还款和部分赎回功能
+  - ✅ 除 ETH、sETH-BTC、XIN 和 MOB 金库, 旧主网 Leaf 上其他所有金库恢复计息和清算
   - ✅ 可以通过 [pUSD 桥](https://app.pando.im/swap/pusd)（Mixin新主网到旧主网方向）将新主网中的稳定币按 1:1 比例转化为旧主网上的 pUSD，用户偿还 Leaf 中的 pUSD 债务
-  - ⏸️ **暂停**计息和清算。
+  - ✅ 旧主网版本还款：可访问 [https://app-legacy.pando.im/leaf/vaults](https://app-legacy.pando.im/leaf/vaults) 或者搜索 @7000105018 切换到旧主网
+  - ⏸️ 对于 ETH、sETH-BTC、XIN 和 MOB 金库，**依然暂停计息和清算，只能全额还款**，且仅支持**无债务**的情况下提取质押物
 - 计划：
-  - 未来在新、旧主网分别重启。
-  - 其中新主网提供完整 Leaf 功能，旧主网 Leaf 会关闭铸币，但是允许部分还款和提现，暂无确切的重启时间。
+  - 旧主网 Leaf 关闭铸币，但是允许部分还款和提现。
   - 提供 pUSD 双向桥，用户也可以将旧主网的 pUSD 兑换为新主网上的稳定币。
-- 备注：建议提取 sETH-BTC 质押物，其他金库可以不操作
+- 备注：建议担心除 ETH、sETH-BTC、XIN 和 MOB 抵押物清算风险的用户尽快还款
 
 **Pando Rings**
 
@@ -58,7 +90,7 @@ contributors: false
   - ✅ 可以通过 [pUSD 桥](https://app.pando.im/swap/pusd)（Mixin新主网到旧主网方向）将新主网中的稳定币按 1:1 比例转化为旧主网上的 pUSD，用户偿还 Rings 中的 pUSD 债务
   - ⏸️ **暂停**计息和清算。
 - 计划：
-  - 未来在旧主网重启。
+  - 在旧主网重启。
   - 旧主网 Rings 会关闭借款，但是允许部分还款和提现，暂无确切的重启时间。
 - 备注：建议提取所有包含 USDT、BTC、ETH、BOX 的 LP-Token 质押物。
 
@@ -66,22 +98,22 @@ contributors: false
 
 - 涉及功能：购买和赎回 XIN 节点份额
 - 当前状态：
-  - ✅ **开放**购买和赎回，但是由于新主网迁移，⏸️ **暂停**发放收益。
-- 计划：会自动迁移到新主网。
-- 备注：不需要额外操作，未来会自动迁移到新主网。
+  - ✅ 已重新**开放**购买和赎回
+  - ✅ 已迁移到新主网
+- 备注：不需要额外操作，将会补发暂停操作期间的理财收益
 
 **BOX 资深理财**
 
 - 涉及功能：购买和赎回 资深 BOX 理财份额
-- 当前状态：⏸️ **暂停**购买和赎回。
-- 计划：会自动迁移到新主网。
-- 备注：不需要额外操作，未来会自动迁移到新主网，并且开放赎回和买入，并且发放对应的 Mixin 债券。
+- 当前状态：
+  - ✅ 已重新**开放**购买和赎回
+  - ✅ 已迁移到新主网
+  - ✅ 已补发暂停操作期间的理财收益
 
 **B.watch**
 
 - 涉及功能：购买和赎回 BOX 成分
-- 当前状态：⏸️ **暂停**购买和赎回。
-- 备注：不需要额外操作，未来会自动迁移到新主网，并且开放赎回和买入。
+- 当前状态：✅ 已重新**开放**购买和赎回。
 
 **BEE.holdings**
 
@@ -97,16 +129,16 @@ contributors: false
 - 当前状态：
   - ✅ 已迁移至新系统；
   - ✅ 支持在新系统内交易、挂单、定投；
-  - 钱包暂时显示的是 Mixin 旧系统钱包。
-- 计划：预计 2023 年 12 月 15 日以前，展示新系统钱包。
+  - ExinOne 的钱包模块介绍了如何查看新旧系统的钱包，未来将展示新系统钱包资产。
+- 计划：EPC 账户资产展示将在不久后恢复。
 - 备注：更多细节请[查阅文档](https://support.exinone.com/zh-CN/docs/Instructions/faq)
 
 
 **ExinPool**
 
 - 涉及功能：Staking
-- 当前状态：正在迁移新系统，目前暂停了 XIN 以外资产的加入 & 取回。
-- 计划：预计 2023 年内迁移到新系统，并完全恢复各项功能。
+- 当前状态：✅ 已迁移至新系统，所有节点加入 & 退出功能均已恢复。
+- 计划：✅ 已补发 TRX、MATIC、ETH、AXS、AVAX、AKT、ZEN 的历史收益，其它节点收益也将陆续补发。
 
 **ExinSwap**
 

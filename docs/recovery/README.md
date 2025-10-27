@@ -20,10 +20,30 @@ Here is the [Chinese version](https://mixin.network/zh/recovery/) of the article
 - Functions in question: transaction, withdrawal and deposit 
 - Current status:
   - ✅ The New Mixin Mainnet has been launched. Users can migrate most types of their crypto assets in the wallets from the old Mixin Mainnet to the  new Mainnet **uni-directionally** but not reversely. 
-  - ✅ Tokens supported for recharge on the new mainnet:
-    - BTC, ETH, XRP, EOS, TRX, various versions of USDT, LTC
-  - ✅ Tokens supported for withdrawals on New Main:
-    - TRX, USDT-TRC20
+  - ✅ Mixin now supports the following assets deposit:
+      1. Bitcoin BTC
+      2. All assets on Ethereum chain
+      3. All assets on Polygon chain
+      4. All assets on the BSC chain
+      5. Litecoin LTC
+      6. All assets on the EOS chain
+      7. Ripple XRP
+      8. Dogecoin DOGE
+      9. All assets on the TRON chain such as USDT-TRC20, TRX, etc. 10.
+      10. MobileCoin recharge, including MOB and eUSD. 
+
+  - ✅ Mixin has already opened some assets withdrawals:
+      1. Bitcoin BTC
+      2. All assets on the TRON chain, such as TRX, USDT, etc.
+      3. Litecoin LTC
+      4. Dogecoin DOGE
+      5. All assets on Polygon chain, such as MATIC, USDT, USDC, etc. 6. 
+      6. All assets on the Ethereum chain, such as ETH, USDT-ERC20, and so on
+      7. MobileCoin's assets MOB and eUSD
+      8. All assets on the BSC chain, such as BNB, USDT, USDC, etc.
+      9. All assets on the EOS chain, such as EOS, USDT, IQ, etc.
+      10. Ripple XRP
+
   - ⏸️ Deposits on the old Mixin Network are suspended. 
     - If you have made deposits to Mixin Network using MVM bridge or Fennec wallet after the network suspended deposits and haven't received the deposits yet, please fill the form https://forms.gle/zFAwfggvd442WaJ68 and join [Mixin customer support group](https://t.me/mvmbridge) on Telegram to report the issue.
   - ❌ Withdrawals on the old Mixin Network has been permanently disabled. To withdraw, please migrate your assets to the new Mixin Network and wait for the resumption of the withdrawal function. 
@@ -33,29 +53,41 @@ Here is the [Chinese version](https://mixin.network/zh/recovery/) of the article
 
 > For the operational statuses of Pando protocols and products, and the frequently asked requestions regarding Pando services, please check [this article](https://quill.im/39204791/53e5f9e6-76d8-46bd-b276-650e852ea5c3) (writen in Chinese).  
 
+- ✅ Swap: 完全恢复
+- ✅ XIN Nodes: 完全恢复
+- ✅ BOX Project: 完全恢复
+- ✅ B.watch: 完全恢复
+- 🚧 Leaf: 旧主网版本部分恢复
+- 🚧 Rings: 旧主网版本部分恢复
+- ⏸️ BEE.holdings: 暂停状态
+- ⏸️ Auto-Invest: 暂停状态
+
 **Pando Swap**
 
-- Functions in question: Swap trading, limit order trading, liquidity management (including adding and removing liquidity) 
-- Current status:
+- Functions in question: Swap trading, limit order trading, liquidity management (including adding and removing liquidity)
+- Current status(new mainnet version):
+  - ✅ Service restarted, all functions work
+  - ‼️ Liquidity is low, be careful when trading.
+- Current status(old mainnet version):
   - ✅ Liquidity management function including adding and removing liquidity has been resumed. 
-  - ⏸️ Trading is still suspended. 
+  - ⏸️ Trading is suspended.
 - Future plans: 
-  - Pando Swap will be operated **independently** on both the new and old Mixin Networks in the future. Trading function will be available on both networks but the exact timetable is yet to be announced. 
-- Notes: it's recommended that all liquidity involving USDT (ERC20), BTC, ETH and/or BOX be removed now to prevent losses resulting from changes in asset prices once the trading function resumes. For liquidity not involving the above mentioned cryptocurrencies, no action is needed at the moment. For details, please check [this article](https://quill.im/39204791/53e5f9e6-76d8-46bd-b276-650e852ea5c3).  
+- Notes: it's recommended that all liquidity from old mainnet version involving USDT (ERC20), BTC, ETH and/or BOX be removed now to prevent losses resulting from changes in asset prices once the trading function resumes. For liquidity not involving the above mentioned cryptocurrencies, no action is needed at the moment. For details, please check [this article](https://quill.im/39204791/53e5f9e6-76d8-46bd-b276-650e852ea5c3).  
 
 **Pando Leaf**
 
 - Functions in question: stablecoin minting, loan repayment, collateral redemption 
 - Current status: 
-  - ✅ Loan repayment must be made in one installment; partial repayment is temperarily not supported.   
-  - ✅ Collateral can be redeemed only when loans are **100% paid off**. 
+  - ✅ Except for ETH, sETH-BTC, XIN and MOB vaults, all other vaults on Pando Leaf (legacy Mixin Network) have resumed interest accural and liquidation.
+  - ✅ Except for ETH、sETH-BTC、XIN 和 MOB vaults, all other vaults on Pando Leaf (legacy Mixin Network) have resumed partial loan repayment and partial asset redemption.
+  - ⏸️ For ETH、sETH-BTC、XIN 和 MOB vaults, debt interest accural and liquidation are both still suspended. For these four types of vault, repayment must be made in one installment - partial repayment is temperarily not supported.   
+  - ✅ For ETH、sETH-BTC、XIN 和 MOB vaults, collateral can be redeemed only when loans are **100% paid off**. 
   - ✅ For users who need pUSD on the old Mixin Network to repay Leaf pUSD debts: you can exchange stablecoins on the new Mixin Network into pUSD on the old Mixin Network using the [pUSD bridge](https://app.pando.im/swap/pusd)
-  - ⏸️ Debt interest accural and liquidation are both suspended. 
+  - ✅ Replay at old mainnet version: Visit [https://app-legacy.pando.im/leaf/vaults](https://app-legacy.pando.im/leaf/vaults) or search @7000105018 to switch to the old mainnet
 - Future plans:
-  - Pando Leaf will be operated **independently** on both the new and old Mixin Networks in the future.   
-  - Leaf on the new Mixin Network will have the full set of functions while the Leaf on the old network will only allow for loan repayment and collateral redemption but discontinue the stablecoin minting function. The exact timetable is yet to be announced.
+  - The Leaf on the old network will only allow for loan repayment and collateral redemption but discontinue the stablecoin minting function.
   - The reversion derection of the pUSD bridge will also be supported so that users can transfer pUSD between the old Mixin Network and the new one. 
-- Notes: it's recommended that the collateral sETH-BTC be redeemed as it's the liquidity provider token of the liquidity pair ETH/BTC in Pando Swap and the reason for withdrawing its liquidity is mentioned in the above Pando Swap section. For all other types of collateral, no action is needed at the moment. 
+- Notes: it's recommended that if you worry about collateral liquidation of your vaults except for ETH、sETH-BTC、XIN and MOB, full or partial repayment of debt be made to put collateral/debt ratio at a safer level.
 
 **Pando Rings**
 
@@ -73,27 +105,23 @@ Here is the [Chinese version](https://mixin.network/zh/recovery/) of the article
 
 - Functions in question: buying and redeeming shares of XIN Node
 - Current status:
-  - ✅  both buying and redeeming shares of XIN Node are available  
-  - ⏸️ Profit distribution is currently suspended due to the Mixin network migration. The profits will be paid retroactively when the migration is finished. 
-- Future plans:
-  - Users' purchased shares will be automatically migrated to the new Mixin Network. 
+  - ✅ Both buying and redeeming shares of XIN Node are available 
+  - ✅ All users' purchased shares have been automatically migrated to the new Mixin Network 
 - Notes: no action is not needed on the users' end. 
 
 **BOX Exclusive Wealth Management**
 
 - Functions in question: buying and redeeming shares of BOX Exclusive Wealth Management Product 
 - Current status:
-  - ⏸️ both buying and redeeming shares are suspened. 
-- Future plans:
-  - Users' purchased shares will be automatically migrated to the new Mixin Network. 
-- Notes: no action is needed on the users' end. All shares will be automatically migrated to the new Mixin Network. After the migration, buying and redeeming of shares will be resumed and users with shares will receive corresponding Mixin bonds in accordance with the amount of tokens they hold. 
+  - ✅ Both buying and redeeming shares are available 
+  - ✅ All users' purchased shares have been automatically migrated to the new Mixin Network 
+  - ✅ The profits during the suspension period have been distributed retroactively to users' wallets
 
 **B.watch**
 
 - Functions in question: buying and redeeming underlying crypto assets of BOX
 - Current status:
-  - ⏸️ both the buying and redeeming of the assets are suspended.
-- Notes: no action is needed on the users' end. The service will be automatically migrated to the new Mixin Network. Once the migration is concluded, the buying and redeeming of the underlying assets of BOX will be resumed. 
+  - ✅ both the buying and redeeming of the assets are resume.
 
 **BEE.holdings**
 
@@ -108,16 +136,15 @@ Here is the [Chinese version](https://mixin.network/zh/recovery/) of the article
 
 - Functions in question: Swap trading, limit order trading, regular investment, and loans
 - Current status:
-  - All services are available now in the new Mixin Network. 
-  - The wallet ExinOne shows is the old network wallet
-- Future plans: Show new network's wallet in 2023-12-15
+  - ✅ All services are available now in the new Mixin Network. 
+- Future plans: Will show the EPC account's transactions soon.
 - Notes: See [docs](https://support.exinone.com/docs/Instructions/faq)
 
 **ExinPool**
 
 - Functions in question: Staking
-- Current status: We are in the process of migrating to a new system and are currently suspending joining & retrieving assets outside of XIN.
-- Future plans: Migration to the new system and full restoration of functionalities is expected within 2023.
+- Current status: ✅ Migrated to the new system, all node join & exit functions have been restored. 
+- Future plans: TRX、MATIC、ETH、AXS、AVAX、AKT、ZEN have been reissued, and other nodes will be reissued one after another.
 
 **ExinSwap**
 
